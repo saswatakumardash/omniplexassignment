@@ -1,0 +1,165 @@
+.layout {
+  min-height: 100vh;
+  background: #FFFFFF;
+  color: #1A1A1A;
+}
+
+.darkTheme {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.darkTheme .navbar {
+  border-bottom-color: #2D2D2D;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.brandName {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.themeToggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.darkTheme .themeToggle:hover {
+  background: #2D2D2D;
+}
+
+.newChatBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.darkTheme .newChatBtn:hover {
+  background: #2D2D2D;
+}
+
+.mainContent {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.chatContainer {
+  background: #F5F5F5;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.darkTheme .chatContainer {
+  background: #1A1A1A;
+}
+
+.chatInput {
+  width: 100%;
+  min-height: 60px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+.chatInput::placeholder {
+  color: #666666;
+}
+
+.inputControls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #E5E5E5;
+  padding-top: 12px;
+}
+
+.darkTheme .inputControls {
+  border-top-color: #2D2D2D;
+}
+
+.controlBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #666666;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.darkTheme .controlBtn:hover {
+  background: #2D2D2D;
+}
+
+.sendButton {
+  margin-left: auto;
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+@media (max-width: 640px) {
+  .mainContent {
+    padding: 32px 16px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+} 

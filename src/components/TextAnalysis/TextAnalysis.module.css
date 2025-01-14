@@ -1,0 +1,114 @@
+.container {
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  min-height: 120px;
+  background: var(--input-bg);
+  color: var(--text-primary);
+}
+
+.analyzeButton {
+  padding: 12px 24px;
+  background: #B94432;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.analyzeButton:hover {
+  background: #A33D2C;
+}
+
+.analyzeButton:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #dc2626;
+  margin: 16px 0;
+}
+
+.results {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sentimentSection,
+.keywordsSection {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.sentimentSection h3,
+.keywordsSection h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.sentimentResult {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sentimentScore {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sentiment {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.keywordsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.keyword {
+  background: var(--tag-bg);
+  color: var(--text-primary);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 16px;
+  }
+} 
