@@ -1,5 +1,5 @@
 import styles from "@/styles/Home.module.css";
-import AuthWrapper from "./AuthWrapper";
+import AuthWrapper from "../components/AuthWrapper";
 import MainPrompt from "../components/MainPrompt/MainPrompt";
 
 const Home = () => {
