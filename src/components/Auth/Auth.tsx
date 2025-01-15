@@ -42,7 +42,7 @@ const Auth = ({ isOpen, onClose }: Props) => {
         dispatch(setAuthState(true));
         dispatch(setUserDetailsState({
           uid: result.user.uid,
-          email: result.user.email,
+          email: result.user.email as string,
           name: result.user.displayName,
           photoURL: result.user.photoURL,
         }));
